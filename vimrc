@@ -1,14 +1,10 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-set backupdir=/tmp
-
 set shiftwidth=2
 
 set tabstop=2
-
 set expandtab
-
 set autoindent
 
 set selectmode=mouse
@@ -25,3 +21,14 @@ set cmdheight=2
 
 set backupdir=~/.vim/backup
 filetype indent off
+
+set showcmd
+set incsearch
+
+function TrimEndLines()
+let save_cursor = getpos(".")
+  :silent! %s#\($\n\s*\)\+\%$##
+  call setpos('.', save_cursor)
+endfunction
+
+au BufWritePre * call TrimEndLines()
