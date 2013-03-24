@@ -15,9 +15,11 @@ set linebreak
 
 " note trailing space at end of next line
 set showbreak=>\ \ \
-" colorscheme zenburn
+
+colorscheme zenburn
+
 set number
-" set cmdheight=1
+set cmdheight=1
 syntax enable
 set backupdir=~/.vim/backup
 filetype indent off
