@@ -42,3 +42,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 runtime! ftplugin/man.vim
 filetype plugin indent on
 syntax on
+
+" Spell checking
+setlocal spell spelllang=en_us
