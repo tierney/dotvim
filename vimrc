@@ -17,6 +17,7 @@ set linebreak
 set showbreak=>\ \ \
 
 " colorscheme zenburn
+colorscheme default
 
 set number
 set cmdheight=1
@@ -44,4 +45,4 @@ filetype plugin indent on
 syntax on
 
 " Spell checking
-setlocal spell spelllang=en_us
+" setlocal spell spelllang=en_us
