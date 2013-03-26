@@ -46,3 +46,9 @@ syntax on
 
 " Spell checking
 " setlocal spell spelllang=en_us
+
+" Single character insert with space.
+nmap <Space> i_<Esc>r
+
+" Underscore is a delimiter.
+set iskeyword-=_
