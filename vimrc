@@ -16,8 +16,8 @@ set linebreak
 " note trailing space at end of next line
 set showbreak=>\ \ \
 
-" colorscheme zenburn
-colorscheme default
+colorscheme zenburn
+" colorscheme default
 
 set number
 set cmdheight=1
